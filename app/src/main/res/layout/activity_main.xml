@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+
+    <edit.qiyue.com.editlib.ContainsEmojiEditText
+        android:id="@+id/containsEmojiEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:hint="我可以过滤表情"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <edit.qiyue.com.editlib.EditTextWithDelete
+        android:id="@+id/editTextWithDelete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:hint="我可以过滤表情,并且自带一键清除"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containsEmojiEditText" />
+
+    <edit.qiyue.com.editlib.SpaceEditText
+        android:id="@+id/spaceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:hint="过滤表情,自带一键清除,自动多位分割"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        app:isShowDelete="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWithDelete"
+        app:spaceSplitCount="3" />
+
+</android.support.constraint.ConstraintLayout>
