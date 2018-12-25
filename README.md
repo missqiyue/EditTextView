@@ -1,5 +1,5 @@
 # 说明
-## EditTextView 3种输入框
+## EditTextView 3种输入框 银行卡号每四位自动加空格，过滤表情，附带清空删除
 ### ContainsEmojiEditText  过滤大部分表情
 ### EditTextWithDelete  过滤大部分表情，并输入内容显示一键清空ICON
 ### SpaceEditText  每X位自动添加在后面添加空格的EditText 并带有一键清空icon,同时过滤表情
